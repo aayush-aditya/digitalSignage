@@ -1,0 +1,121 @@
+<div class="row" style="margin-top:20px;">
+  <div class="col-sm-2">
+    <button type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#myModal2"><i class="fa fa-refresh" aria-hidden="true"> Add Station</i></button>
+  </div>
+  <div class="col-sm-2">
+    <button type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#myModal3"><i class="fa fa-plus" aria-hidden="true"> Assign Player</i></button>
+  </div>
+  <div class="col-sm-2">
+    <button type="button" class="btn btn-info btn-block"><i class="fa fa-trash" aria-hidden="true"> Remove</i></button>
+  </div>
+  <div class="col-sm-2">
+    <button type="button" class="btn btn-info btn-block"><i class="fa fa-refresh" aria-hidden="true"> Reload</i></button>
+  </div>
+</div></br>
+  <div class="row">
+    <div class="col-sm-12" style="background-color:#b8b894;height:50px;text-align:center;padding:15px">
+    No Station Loaded.
+    </div>
+  </div>
+
+  <div id="myModal2" class="modal fade" role="dialog">
+  	<div class="modal-dialog">
+  		<div class="modal-content">
+        			<div class="modal-header">
+         				 <button type="button" class="close" data-dismiss="modal">&times;</button>
+         				 <h4 class="modal-title">Add Station</h4>
+       			 </div>
+      			<div class="modal-body">
+  				<!--<h4>Provide proper information for creating a Station.</h4>
+  				</br>-->
+  				<div class="row">
+  					<div class="col-sm-4">
+          				<label>Station Name</label>
+  					</div>
+  					<div class="col-sm-8">
+  					<input type="text" name="Station" ng-model="statName">
+  					</div></br>
+         			<div class="margin-left">
+           <div class="col-lg-12 col-md-12 col-sm-12">
+  					<div class="col-lg-4 col-md-4">
+          					<button type="button" class="btn btn-primary" ng-click="addStation()">Save</button>
+  					</div>
+  					<div class="col-lg-4 col-md-4">
+  						<button type="button" class="btn btn-danger" data-dismiss="modal" ng-click="cancelAdd()">Cancel</button>
+  					</div>
+          </div>
+
+  			</div>
+      </div>
+  	</div>
+        </div>
+
+    </div>
+  </div>
+
+  <div id="myModal3" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Assign Players</h4>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-sm-12">
+                          <div id="fluid" class="row-fluid">
+                              <div>
+
+                                  <div id="divAvailable" class="col-lg-5 col-md-6">
+                                      <h6>Available Players</h6>
+                                      <ul ui-sortable="sortableOptions" class="connectedList" ng-model="list1" style="list-style: none;">
+                                          <li ng-repeat="item in list1" class="item">{{item.name}}</li>
+                                          <li ng-show="list1.length==0">&nbsp;</li>
+                                      </ul>
+                                  </div>
+                                  <div id="divSelected">
+                                      <h6>Selected Players
+                                          <h6>
+                                              <ul ui-sortable="sortableOptions" class="connectedList" ng-model="list2" style="list-style: none;">
+                                                  <li ng-repeat="item in list2" class="item">{{item.name}}</li>
+                                                  <li ng-show="list2.length==0">&nbsp;</li>
+                                              </ul>
+                                  </div>
+                                  <!--div style="clear:both;"></div>
+              <hr />
+              <div>list1: {{list1 | json}}</div>
+              <div>list2: {{list2 | json}}</div-->
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+                  </br>
+                  <div class="col-lg-12 col-md-12">
+                    Note: "You can drag and drop from list of Available Players to Selected Players list for selecting it "
+                  </div>
+                </br>
+                  <div class="margin-left">
+                      <div class="row">
+                          <div class="col-lg-1">
+                          </div>
+                          <div class="col-lg-3">
+                              <button type="button" class="btn btn-primary" ng-click="save1()">Save</button>
+                          </div>
+                          <div class="col-lg-1">
+                          </div>
+                          <div class="col-lg-3">
+                              <button type="button" class="btn btn-info" ng-click="restore1()">Reset</button>
+                          </div>
+                          <div class="col-lg-1">
+                          </div>
+                          <div class="col-lg-3">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>

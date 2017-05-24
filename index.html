@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html  ng-app="myApp">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <title>Digital Signage</title>
+
+     <!-- <link rel="stylesheet" href="Assets/css/common.min.css"> -->
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+     <link  rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="mainStyle.css">
+     <link rel="stylesheet" href="shared/sidebar/sidebar.css">
+     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+     <link rel="stylesheet" href="Assets/css/app.less">
+     <link rel="stylesheet" href="Assets/css/modalStyle.css">
+     <link rel="stylesheet" href="Assets/css/component.min.css">
+     <link rel="stylesheet" href="Assets/css/dropdown.css">
+     
+     <script type="text/javascript"  src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+     <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" charset="utf-8"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script type="text/javascript"  src="node_modules/angular/angular.min.js" charset="utf-8"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
+     <script type="text/javascript"  src="node_modules/ui-router/angular-ui-router.min.js" charset="utf-8"></script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+     <script type="text/javascript"  src="node_modules/angular-animate/angular-animate.min.js" charset="utf-8"></script>
+
+     <script src="app.js" charset="utf-8"></script>
+     <script src="components/home/homeController.js" charset="utf-8"></script>
+     <script src="components/login/LoginController.js" charset="utf-8"></script>
+     <script src="components/playerView/playerView.js" charset="utf-8"></script>
+     <script src="components/scenesView/scenesView.js" charset="utf-8"></script>
+     <script src="components/stationView/stationView.js" charset="utf-8"></script>
+     <script src="components/templatesView/templatesView.js" charset="utf-8"></script>
+     <script type="text/javascript"  src="components/customServices/ModalService.js" charset="utf-8"></script>
+     <script type="text/javascript"  src="components/customDirectives/modalDirective.js" charset="utf-8"></script>
+
+
+
+  </head>
+  <body>
+    <div class="container mainContainer">
+      <div class="row">
+        <!-- <div class="col-md-12">
+          <div class="page-header">
+            <h1>{{ title }}</h1>
+          </div>
+        </div> -->
+
+        <div ui-view="main"></div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

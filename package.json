@@ -1,0 +1,26 @@
+{
+  "name": "digital_signage",
+  "version": "1.0.0",
+  "description": "digitalsignage",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aayush-aditya/digitalSignage.git"
+  },
+  "keywords": [
+    "angular",
+    "angular-ui-router"
+  ],
+  "author": "aayush aditya",
+  "license": "ISC",
+  "dependencies": {
+    "@uirouter/angularjs": "latest",
+    "angular": "^1.6.4",
+    "angular-animate": "^1.6.4",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}

@@ -1,0 +1,143 @@
+<div class="col-md-12" style="padding:0px;">
+  <!-- <h3>Digital Signage Login </h3> -->
+
+  <div class="row loginBack">
+      <div class="col-md-7">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                  <div class="item active">
+                      <img src="../../Assets/img/sign2.jpg" alt="First slide">
+                      <div class="carousel-caption colorBlue">
+                          <h3>
+                              Retail</h3>
+                          <p>
+                              Digital signage use in retails stores makes the users a better place for shopping.</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="../../Assets/img/sign1.jpg" alt="Second slide">
+                      <div class="carousel-caption colorBlue">
+                          <h3>
+                              Manufacturing</h3>
+                          <p>
+                              Digital signage use in manufacturing firms provides uisers a better experience.<</p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="../../Assets/img/sign3.jpg" alt="Third slide">
+                      <div class="carousel-caption colorBlue">
+                          <h3>
+                              PublicSectors</h3>
+                          <p>
+                              Digital signage use in public sectors provides uisers a better experience.</p>
+                      </div>
+                  </div>
+              </div>
+              <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control"
+                      href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right">
+                      </span></a>
+          </div>
+          <div class="main-text hidden-xs">
+              <div class="col-md-12 text-center"  style="margin-top:20px; color: black;">
+                  <h1>
+                      Digital Signage</h1>
+                  <h6>
+                       We provide for wayfinding, exhibitions, marketing, Shopping, outdoor advertising and many more. Login to know more.
+                  </h6>
+                  <div class="">
+                    </div>
+              </div>
+          </div>
+      </div>
+
+
+<form ng-submit="formSubmit()" class="form">
+      <div class="col-md-4">
+          <div class="form-group">
+              <div class="col-md-offset-2 col-md-10">
+                  <div class="form-login">
+                  <h4>Welcome back.</h4>
+                  <div class="form-group">
+                    <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="username"  ng-model="username" required="" />
+                  </div>
+                  <div class="form-group">
+                    <input type="password" id="userPassword" class="form-control input-sm chat-input" placeholder="password" ng-model="password"/>
+                  </div>
+                  </br>
+                  <div class="wrapper form-group">
+                    <!-- <span class="group-btn"> -->
+                        <button type="submit" class="btn btn-primary">Login</button><span class="text-danger">{{ error }}</span>
+                    <!-- </span> -->
+                  </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+</form>
+
+  <!-- <form ng-submit="formSubmit()" class="form">
+    <div class="col-md-4">
+      <div class="form-group">
+        <input type="text" class="form-control" ng-model="username" placeholder="username" required=""/>
+      </div>
+
+      <div class="form-group">
+        <input type="password" class="form-control" ng-model="password" placeholder="password" required=""/>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Login</button>
+        <span class="text-danger">{{ error }}</span>
+      </div>
+
+    </div>
+  </form> -->
+</div>
+<style media="screen">
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:400);
+body {
+background-color:#fff;
+-webkit-font-smoothing: antialiased;
+font: normal 14px Roboto,arial,sans-serif;
+}
+
+.container {
+  padding: 25px;
+  position: fixed;
+}*/
+
+.form-login {
+  background-color: #EDEDED;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  border-color:#d2d2d2;
+  border-width: 5px;
+  box-shadow:0 1px 0 #cfcfcf;
+}
+
+h4 {
+border:0 solid #fff;
+border-bottom-width:1px;
+padding-bottom:10px;
+text-align: center;
+}
+
+.form-control {
+  border-radius: 10px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+</style>

@@ -1,0 +1,41 @@
+
+<div class="row" id="buttonScenesBack" style="margin:10px;">
+  <button style="float:right;" type="button" name="button" ng-click="goBack()"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></button>
+</div>
+<div ui-view="temp" ></div>
+<div class="row"  ng-hide="$state.includes('home.scenes.templates')" id="buttonScenesContent">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img class="roundImage" src="/Assets/img/startBlank.png" alt="Start Blank">
+      <div class="caption">
+        <h3 class="centerText">Start Blank</h3>
+        <p class="paddingP">Create your own design, simply start with a blank scene and mix in your favourite images, videos, SVG Graphics and smart components.</p>
+        <p><a href="" class="btn btn-primary" role="button"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></p>
+      </div>
+    </div>
+  </div>
+<!-- </div> -->
+<!-- <div class="row"> -->
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img class="roundImage" src="/Assets/img/fromTemplate.png" alt="From Template">
+      <div class="caption">
+        <h3 class="centerText">From Template</h3>
+        <p class="paddingP">With hundreds of beautiful pre-made design you are sure to find something you like. Scene templates are pre-loaded with graphics for you.</p>
+        <p><a ui-sref=".templates" class="btn btn-primary" role="button"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></p>
+      </div>
+    </div>
+  </div>
+<!-- </div> -->
+<!-- <div class="row"> -->
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img class="roundImage" src="/Assets/img/twitterTemplate.png" alt="Twitter">
+      <div class="caption">
+        <h3 class="centerText">Twitter</h3>
+        <p class="paddingP">With Twitter pre defined templates designed for their pages you are sure to find something for you.These templates are too good to be liked.</p>
+        <p><a href="" class="btn btn-primary" role="button"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></p>
+      </div>
+    </div>
+  </div>
+</div>
